@@ -35,7 +35,9 @@ public class Main {
         System.out.println("Enter text for counting of сapital letters:");
         String text = stringListProcessor.getText(sc);
         StringManipulator toUpperCase = (s) -> s.toUpperCase();
-        System.out.println("Count of capital letters in the row: " + uppercaseCounter.apply(toUpperCase.changeRegister(text)));
+        String result = String.valueOf(uppercaseCounter.apply(text));
+        System.out.println("Count of capital letters in the row: " + result);
+        System.out.println("Converting String to uppercase: "+ toUpperCase.changeRegister(text));
     }
 
 }
